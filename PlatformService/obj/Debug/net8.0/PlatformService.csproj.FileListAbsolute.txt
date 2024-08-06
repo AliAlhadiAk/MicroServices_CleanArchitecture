@@ -1,0 +1,7 @@
+C:\Users\alial\source\repos\PlatformService\PlatformService\obj\Debug\net8.0\PlatformService.csproj.AssemblyReference.cache
+C:\Users\alial\source\repos\PlatformService\PlatformService\obj\Debug\net8.0\PlatformService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alial\source\repos\PlatformService\PlatformService\obj\Debug\net8.0\PlatformService.AssemblyInfoInputs.cache
+C:\Users\alial\source\repos\PlatformService\PlatformService\obj\Debug\net8.0\PlatformService.AssemblyInfo.cs
+C:\Users\alial\source\repos\PlatformService\PlatformService\obj\Debug\net8.0\PlatformService.csproj.CoreCompileInputs.cache
+C:\Users\alial\source\repos\PlatformService\PlatformService\obj\Debug\net8.0\PlatformService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\alial\source\repos\PlatformService\PlatformService\obj\Debug\net8.0\PlatformService.MvcApplicationPartsAssemblyInfo.cache

@@ -1,0 +1,62 @@
+version: '3.4'
+
+services:
+  platformservice:
+    image: ${DOCKER_REGISTRY-}platformservice
+    build:
+      context: .
+      dockerfile: PlatformService/Dockerfile
+    depends_on:
+      - redis
+      - sqlserver
+      - rabbitmq
+    environment:
+      - REDIS_HOST=redis
+      - SQLSERVER_HOST=sqlserver
+      - SQLSERVER_USER=sa
+      - SQLSERVER_PASSWORD=YourStrong!Passw0rd
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USER=guest
+      - RABBITMQ_PASSWORD=guest
+    networks:
+      - app-network
+
+  redis:
+    image: redis:latest
+    volumes:
+      - redis-data:/data
+    networks:
+      - app-network
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong!Passw0rd
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+    networks:
+      - app-network
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    networks:
+      - app-network
+    ports:
+      - "5672:5672"  
+      - "15672:15672" 
+
+volumes:
+  redis-data:
+  sqlserver-data:
+  rabbitmq-data:
+
+networks:
+  app-network:
+    driver: bridge

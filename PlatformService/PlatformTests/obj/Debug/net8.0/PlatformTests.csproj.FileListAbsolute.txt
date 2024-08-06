@@ -1,0 +1,6 @@
+C:\Users\alial\source\repos\PlatformTests\bin\Debug\net8.0\CoverletSourceRootsMapping_PlatformTests
+C:\Users\alial\source\repos\PlatformTests\obj\Debug\net8.0\PlatformTests.csproj.AssemblyReference.cache
+C:\Users\alial\source\repos\PlatformTests\obj\Debug\net8.0\PlatformTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alial\source\repos\PlatformTests\obj\Debug\net8.0\PlatformTests.AssemblyInfoInputs.cache
+C:\Users\alial\source\repos\PlatformTests\obj\Debug\net8.0\PlatformTests.AssemblyInfo.cs
+C:\Users\alial\source\repos\PlatformTests\obj\Debug\net8.0\PlatformTests.csproj.CoreCompileInputs.cache
